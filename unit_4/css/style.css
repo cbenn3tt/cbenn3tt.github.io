@@ -1,4 +1,5 @@
-
+@import url(https://fonts.googleapis.com/css?family=Lustria);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 html { 
   /*background: url(../images/bg.png); 
@@ -14,25 +15,28 @@ html {
   /*background below via 
   https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.5,0.39950369151369153,0.27361194719040366,1,0.9321808971405561,0.8472238943808073,1,0.7990073830273831,0.5472238943808073,0.5,0.46609044857027804,0.4236119471904036,0.8,0.6392059064219064,0.4377791155046459&swatchOrder=0,1,2,3,4*/
 
-  background-image: linear-gradient(#FFEED8, #7F776C);
+  background: linear-gradient(#FFEED8, #7F776C);
   }
 
 body {
 	font-size: 100%;
 	text-align: left;
 	color: #403226;
-	font-family: "Century Gothic", Candara, Helvetica, sans-serif;
+	font-family: "Lustria", Georgia, serif;
 }
 
 h1 {
 	text-align: center;
 	color: #7F644D;
 	text-transform: uppercase;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	letter-spacing: .8em
 }
 
 h2 {
 	text-align: center;
 	color: #7F644D;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 .hero {
