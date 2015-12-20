@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Lustria);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300);
+
+html {
+	background: #c6ced3;
+}
+
+body {
+	font-size: 16px;
+	text-align: left;
+	color: #c6ced3;
+	font-family: "Lustria", Georgia, serif;
+}
+
+header {
+	background: #25241a;
+}
+
+footer {
+	background: #25241a;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2.4em;
+	color: #Fe0101;
+	font-weight: 100;
+	letter-spacing: .8em
+}
+
+h2 {
+	font-size: 1.4em; 
+	letter-spacing: .2em;
+	color: #f5f5ee;
+	font-weight: 300;
+	padding: .8em 0;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+#wrapper {
+	margin: 0 auto;
+	background-color: #110f03; 
+	width: 80%;
+}
+
+#hero_image {
+	background: url(../images/fishhero.png); 
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	float: left;
+}
+
+#copy {
+	font-size: .8em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
