@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Lustria);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,700);
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html {
+	background: #c6ced3;
+	text-align: left;
+}
+
+body {
+	font-size: 16px;
+	text-align: left;
+	color: #c6ced3;
+	font-family: "Lustria", Georgia, serif;
+}
+
+main {
+	text-align: center;
+}
+
+header {
+	background: #25241a;
+}
+
+footer {
+	background: #25241a;
+}
+
+section {
+	width:100%;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2.4em;
+	padding: 20px 0;
+	color: #Fe0101;
+	font-weight: 100;
+	letter-spacing: .8em
+}
+
+h2 {
+	font-size: 1.4em; 
+	letter-spacing: .2em;
+	color: #f5f5ee;
+	font-weight: 300;
+	padding: .8em 0;
+}
+h3 {
+	font-size: 1.2em; 
+	letter-spacing: .2em;
+	color: #Fe0101;
+	padding: .8em 0;
+	border-top: 1px #fe0101 solid;
+	font-weight: 300;
+}
+
+img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	/*max-height: 300px; 
+	max-width: 300px;*/
+	padding: 1px;
+}
+
+#wrapper {
+	margin: 0 auto;
+	background-color: #110f03; 
+	width: 80%;
+	max-width: 1020px;
+}
+
+#hero_image {
+	background: url(../images/fishhero.png); 
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 292px;
+	display: inline-block;
+	position: left;
+}
+
+#copy {
+	font-size: .8em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	padding: 5px;
+}
+
+nav {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	color: #Fe0101;
+	padding: 20px 0;
+}
+
+nav a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 2%;
+	width: 30%;
+}
+
+nav a:hover {
+	background-color: #c6ced3;
+	font-weight: 700;
+}
+
+#item-wrap {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.work_item {
+	margin: auto;
+	width: 33.3333%;
+	float: left;
+	padding: 0 10px 10px 10px;
+	text-align: center;
+}
+
+.clearfix:after {
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	content: ' '; 
+	display: block; 
+	clear: both;
+}
+
+.desc {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
