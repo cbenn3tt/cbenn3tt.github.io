@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Bennett Arts | Photography Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
@@ -15,15 +15,18 @@
 
 	<section id="hero_image">&nbsp;</section>
 
-	<nav id="nav_one">
-		<p>
-			<a href="#work">Work</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#about">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#contact">Contact</a>
-		</p>
+	<nav class="clearfix">
+		<a href="#work">Work</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
 	</nav>
 </header>
 
 <main>
-
+<!-- Remove this "two_column" div - for assignment only -->
+<div id="two_column" class="clearfix">
+<!-- Remove this "left" div - for assignment only -->
+<div id="left">
 	<section>
 	
 	<a name="work"></a>
@@ -77,18 +80,24 @@
 	</div></div>
 	
 </section>
-
-
+<!-- Remove the following <div> (closed "left" div above) in next iteration -->
+</div>
+<!-- Remove <aside> in next iteration - for assignment only. -->
+<aside id="right">
+<p class="desc">Picanha prosciutto incididunt in id eu turkey eiusmod meatball enim tri-tip alcatra sunt jerky shank. Jowl flank ribeye, incididunt bacon pariatur bresaola minim sausage ut. Fatback short ribs est cupim.</p>
+</aside>
+<!-- Remove this following div - for assignment only -->
+</div>
 </main>
 
 <footer>
-	<nav id="nav_final">
-	
-	<p>
-		<a href="#work">Work</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#about">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#contact">Contact</a>
-	</p>
-<br><br>
-	<p id="copy">
+	<nav class="clearfix">
+		<a href="#work">Work</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+	</nav>
+
+	<div id="copy"><p>
 		&copy; 
 		<script language="javascript" type="text/javascript">
 			var today = new Date()
@@ -96,9 +105,7 @@
 			document.write(year)
 		</script> 
 		Bennett Arts
-	</p>
-
-</nav>
+	</p></div>
 
 </footer>
 
