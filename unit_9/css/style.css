@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Lustria);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,700);
+
+
+html {
+	background: #c6ced3;
+	text-align: left;
+	min-width: 320px;
+}
+
+body {
+	font-size: 16px;
+	text-align: left;
+	color: #c6ced3;
+	font-family: "Lustria", Georgia, serif;
+}
+
+main {
+	text-align: center;
+}
+
+header, footer {
+	background: #25241a;
+	padding-bottom: 3px;
+}
+
+
+section {
+	width:100%;
+}
+
+/*************************** HEADER STYLES ***************************/
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	letter-spacing: .2em;
+	font-weight: 300;
+	margin: auto;
+}
+
+h1 {
+	font-size: 2.4em;
+	padding: .6em 0;
+	color: #Fe0101;
+	font-weight: 100;
+	letter-spacing: .8em
+}
+
+h2 {
+	font-size: 1.4em; 
+	color: #f5f5ee;
+	padding: 1em 0;
+}
+
+h3 {
+	font-size: 1.2em; 
+	color: #Fe0101;
+	padding: .8em 0;
+	border-top: 1px #fe0101 solid;
+}
+
+img {
+	display: inline-block;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	padding: 1px;
+}
+
+
+#hero_image {
+	background: url(../images/fishhero.png); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 292px;
+	display: inline-block;
+	position: left;
+}
+
+
+a {
+	color: #Fe0101;
+	padding: 1.2em 0;
+}
+
+/*************************** NAV ***************************/
+
+nav {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	width: 100%;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	display: inline-block;
+	padding: .8em .4em;
+	width: 28%;
+}
+
+nav a:hover {
+	background-color: #c6ced3;
+	font-weight: 700;
+}
+
+nav a:active {
+	background-color: #c6ced3;
+	font-weight: 700;
+}
+
+#check {
+	display: none;
+}
+
+label {
+	display: none;
+	text-align: center;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.hamburger {
+	width: 25px;
+	height: 2px;
+	background-color: #c6ced3;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+
+
+/*************************** BODY ***************************/
+
+#wrapper {
+	margin: 0 auto;
+	background-color: #110f03; 
+	width: 80%;
+	max-width: 1020px;
+}
+
+/*#rightmenu {
+	display: none;
+	position: fixed;
+	right: 4%;
+	top: 40%; 
+	width: 3em;
+	height: 2em;
+	font-weight: 700;
+	background-color: #c6ced3;
+	text-align: center;
+}
+
+.rotate-text {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicI...
+}  
+
+#rightmenu a {
+	text-decoration: none;
+	display: inline-block;
+}*/
+
+
+#item-wrap {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.work_item {
+	margin: auto;
+	width: 30%;
+	float: left;
+	padding: 0 10px 10px 10px;
+	text-align: center;
+}
+
+.contact_item {
+	margin: auto;
+	width: 30%;
+	float: left;
+	padding: 0 10px 10px 10px;
+	text-align: center;
+}
+
+.clearfix:after {
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	content: ' '; 
+	display: block; 
+	clear: both;
+}
+
+.desc {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+#copy {
+	font-size: .8em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	padding: .4em;
+	border-top: 1px #fe0101 solid;
+}
+
+
+
+/************************** media queries **************************/
+
+@media only screen and (max-width:858px){
+	.work_item {
+		width: 45%;
+	}
+
+	.contact_item {
+		width: 60%;
+		float: none;
+	}
+
+	#hero_image {
+		height: 200px;
+	}
+	h1 {
+		font-size: 2em;
+		letter-spacing: .6em
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width:700px){
+	body {
+		font-size: 15px;
+	}
+	#topnav {
+		display: none;
+	}
+	h2 {
+		padding: .8em 0;
+	}
+	label {
+		display: block;
+	}
+
+	#check:checked + #topnav {
+		display: block;
+	}
+
+	#hero_image {
+		background: url(../images/fishhero700.png); 
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width:590px){
+	body {
+		font-size: 14px;
+	}
+
+	h2 {
+		padding: .6em;
+	}
+	.work_item {
+		width: 80%;
+		float: none;
+	}
+	.contact_item {
+		width: 80%;
+	}
+	#hero_image {
+		background: url(../images/fishhero590.png); 
+		height: 80px;
+	}
+	.desc {
+		padding-top: .6em;
+	}
+	#wrapper {
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width:541px){
+	body {
+		font-size: 13px;
+	}
+	img {
+		margin: 0;
+	}
+	
+	h1 {
+		font-weight: 300;
+	}
+
+	#wrapper {
+		width: 90%;
+	}
+	nav a {
+		font-size: 15px;
+		float: none;
+		width: 100%;
+		padding: .4em .2em;
+	}
+}
+
+@media only screen and (max-width:450px){
+	body {
+		font-size: 12px;
+	}
+	#wrapper {
+		width: 95%;
+	}
+/*	#rightmenu {
+		display: block;
+	}*/
+}
+
+@media only screen and (max-width:320px){
+	#hero_image {
+		background: url(../images/fishhero400.png); 
+		height: 40px;
+	}
+
+}
